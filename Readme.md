@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Zhenia Zhe](https://up.htmlacademy.ru/htmlcss/28/user/1483889).
-* Наставник: `Степан Нифонтов`.
+* Наставник: `Степан Нифонтов` (https://htmlacademy.ru/profile/steve).
 
 ---
 
