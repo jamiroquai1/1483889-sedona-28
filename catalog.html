@@ -14,9 +14,9 @@
                 <img src="img/svg-sedona/logo-sedona.svg" width="138" height="70" alt="Логотип города «Седона»">
             </a>
             <ul>
-                <li><a href="#">Информация</a></li>
-                <li><a href="#">Фото и видео</a></li>
-                <li><a href="#">Карта штата</a></li>
+                <li><a href="catalog.html">Информация</a></li>
+                <li><a href="catalog.html">Фото и видео</a></li>
+                <li><a href="catalog.html">Карта штата</a></li>
                 <li><a href="catalog.html">Гостиницы</a></li>
             </ul>
         </nav>
@@ -24,6 +24,63 @@
 
     <main>
         <h1 hidden>Поиск отеля</h1>
+
+        <section>
+            <h2 hidden>Фильтр по гостиницам Седоны</h2>
+            <form action="https://echo.htmlacademy.ru" method="get">
+                <fieldset>
+                    <legend>Инфраструктура:</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="pool" id="filter-pool">
+                            <label for="filter-pool">Бассейн</label>
+                        </li>
+        
+                        <li>
+                            <input type="checkbox" name="parking" id="filter-parking">
+                            <label for="filter-parking">Парковка</label>
+                        </li>
+        
+                        <li>
+                            <input type="checkbox" name="internet" id="filter-wifi">
+                            <label for="filter-wifi">Wi-Fi</label>
+                        </li>
+                    </ul>
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Тип жилья:</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="hotel" id="filter-hotel">
+                            <label for="filter-hotel">Гостиница</label>
+                        </li>
+        
+                        <li>
+                            <input type="checkbox" name="motel" id="filter-motel">
+                            <label for="filter-motel">Мотель</label>
+                        </li>
+        
+                        <li>
+                            <input type="checkbox" name="apartments" id="filter-apartments">
+                            <label for="filter-apartments">Апартаменты</label>
+                        </li>
+                    </ul>
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Стоимость в сутки (р):</legend>
+                    <ul>
+                        <li>
+                            <output name="sum">от 0</output>
+                            <output name="sum">до 3000</output>
+                            <input type="range" name="price" id="price-filter" min="0" max="3000">
+                        </li>
+                    </ul>
+                    <button type="submit">Показать</button>
+                </fieldset>
+                </form>
+        </section>
 
         <section>
 
@@ -115,3 +172,6 @@
 </body>
 
 </html>
+
+<!-- Фильтр по гостиницам -->
+

@@ -14,9 +14,9 @@
         <img src="img/svg-sedona/logo-sedona.svg" width="138" height="70" alt="Логотип города «Седона»">
       </a>
       <ul>
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Фото и видео</a></li>
-        <li><a href="#">Карта штата</a></li>
+        <li><a href="catalog.html">Информация</a></li>
+        <li><a href="catalog.html">Фото и видео</a></li>
+        <li><a href="catalog.html">Карта штата</a></li>
         <li><a href="catalog.html">Гостиницы</a></li>
       </ul>
     </nav>
@@ -39,7 +39,7 @@
             <h3>Настоящий городок</h3>
             <p>— №1 —</p>
             <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-            <img src="img/image-1.jpg" width="800" height="256" alt="Фотография города Седона">
+            <img src="img/image-1.jpg" width="800" height="256" alt="Изображение города Седона">
           </div>
 
           <ul>
@@ -65,7 +65,7 @@
 
         <li>
           <div>
-            <img src="img/image.jpg" width="800" height="256" alt="Фотография города Седона">
+            <img src="img/image.jpg" width="800" height="256" alt="Изображение Моста Дьявола в городе Седона">
             <h3>Там есть Мост дьявола</h3>
             <p>— №2 —</p>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -99,8 +99,39 @@
       <p>Укажите предполагаемые даты поездки, <br>
         и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <button type="button">Поиск гостиницы в Седоне</button> <br>
+
+      <!-- Форма поиска -->
+      <section>
+        <h2>Поиск гостиницы в Седоне</h2>
+
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="arrival-date">Дата заезда:</label>
+            <input type="date" id="arrival-date" name="arrival-date" value="2017-04-24" required>
+          </p>
+
+          <p>
+            <label for="departure-date">Дата выезда:</label>
+            <input type="date" id="departure-date" name="departure-date" value="2017-07-04" required>
+          </p>
+
+          <p>
+            <label for="number-adults">Взрослые:</label>
+            <input type="number" id="number-adults" name="number-adults" value="2" min="1" max="10" required>
+          </p>
+
+          <p>
+            <label for="children-number">Дети:</label>
+            <input type="number" id="children-number" name="children-number" value="0" min="0" max="10">
+          </p>
+
+          <button type="submit">Найти</button>
+        </form>
+      </section>
+
       <img src="img/map.jpg" width="1199" height="594" alt="Седона на карте Google Map">
     </section>
+
   </main>
 
   <footer>
@@ -114,9 +145,9 @@
     <section>
       <h2 hidden>Наши соцсети</h2>
       <ul>
-        <li><a href="#"><img src="img/svg-sedona/twitter.svg" width="17" height="17" alt="Твиттер"></a>
-        <li><a href="#"><img src="img/svg-sedona/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a>
-        <li><a href="#"><img src="img/svg-sedona/youtube.svg" width="20" height="16" alt="YouTube"></a>
+        <li><a href="#"><img src="img/svg-sedona/twitter.svg" width="17" height="17" alt="Твиттер"></a></li>
+        <li><a href="#"><img src="img/svg-sedona/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a></li>
+        <li><a href="#"><img src="img/svg-sedona/youtube.svg" width="20" height="16" alt="YouTube"></a></li>
       </ul>
     </section>
     <p>
@@ -125,34 +156,6 @@
         <img src="img/svg-sedona/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy"></a>
     </p>
   </footer>
-
-
-
-
-
-
-  <!-- Форма поиска набросок
-    <section>
-      <h2>Поиск гостиницы в Седоне</h2>
-    <p>
-      <label>Дата заезда:</label>
-      <input type="text" value="24 апреля 2017">
-    </p>
-    <p>
-      <label>Дата выезда:</label>
-      <input type="text" value="4 июлря 2017">
-    </p>
-    <p>
-      <label>Взрослые:</label>
-      <input type="number" value="2">
-      <label>Дети:</label>
-      <input type="number" value="0">
-    </p>
-    <p>
-      <button type="button">Найти</button>
-    </p>
-    </section>
--->
 
 </body>
 
