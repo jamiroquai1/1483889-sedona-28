@@ -4,35 +4,40 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
 
 </head>
 
 <body>
 
-  <header>
-    <nav>
+  <header class="header">
+    <nav class="navigation">
       <a href="index.html">
-        <img src="img/svg-sedona/logo-sedona.svg" width="138" height="70" alt="Логотип города «Седона»">
-      </a>
-      <ul>
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Фото и видео</a></li>
-        <li><a href="#">Карта штата</a></li>
-        <li><a href="catalog.html">Гостиницы</a></li>
+        <img src="img/svg-sedona/logo-sedona.svg" width="138" height="70" class="navigation_logo_img"
+          alt="Логотип города «Седона»"></a>
+
+      <ul class="navigation_list">
+        <li class="navigation_list_item"><a class="navigation_list_item_link navigation_list_item_link_active" href="#">Информация</a></li>
+        <li class="navigation_list_item"><a class="navigation_list_item_link" href="#">Фото и видео</a></li>
+        <li class="navigation_list_item"><a class="navigation_list_item_link" href="#">Карта штата</a></li>
+        <li class="navigation_list_item"><a class="navigation_list_item_link" href="catalog.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
 
-    <section>
+    <section class="section_welcome">
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-      <img src="img/svg-sedona/welcome.svg" width="456" height="350" alt="Добро пожаловать в Седону">
+      <img src="img/svg-sedona/welcome.svg" width="456" height="350" alt="Добро пожаловать в Седону"
+        class="welcome_section_img">
     </section>
 
-    <section>
-      <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    <section class="section_reasons">
+      <h2 class="section_reasons_title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+      <p class="section_reasons_text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 
       <ol>
         <li>
@@ -94,17 +99,16 @@
 
     </section>
 
-    <section>
+    <section class="section_order">
       <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-      <b>Заинтересовались?</b>
-      <p>Укажите предполагаемые даты поездки, <br>
+      <p class="section_order_title">Заинтересовались?</p>
+      <p class="section_order_text">Укажите предполагаемые даты поездки, <br>
         и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button type="button">Поиск гостиницы в Седоне</button>
+      <button class="section_order_button" type="button">Поиск гостиницы в Седоне</button>
+      
 
       <!-- Форма поиска -->
-      <section>
-        <h2>Поиск гостиницы в Седоне</h2>
-
+      <div class="form_search">
         <form action="https://echo.htmlacademy.ru" method="post">
           <div>
             <label for="arrival-date">Дата заезда:</label>
@@ -146,22 +150,24 @@
 
           <button type="submit">Найти</button>
         </form>
-      </section>
+      </div>
 
       <img src="img/map.jpg" width="1199" height="594" alt="Седона на карте Google Map">
     </section>
 
   </main>
 
-  <footer>
-    <section>
+  <footer class="footer">
+
+    <section class="section_contacts">
       <h2 class="visually-hidden">Наши контакты</h2>
       <p>
         #VISITSEDONA<br>
         <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
       </p>
     </section>
-    <section>
+
+    <section class="section_contacts_social">
       <h2 class="visually-hidden">Наши соцсети</h2>
       <ul>
         <li><a href="https://twitter.com/"><svg xmlns="http://www.w3.org/2000/svg"
@@ -179,7 +185,8 @@
             </svg></a></li>
       </ul>
     </section>
-    <p>s
+
+    <p class="section_contacts_developer">
       WEBSITE BY
       <a href="https://htmlacademy.ru/intensive/htmlcss">
         <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="115" height="41"
@@ -190,6 +197,7 @@
             transform="translate(0 -0.02)" fill="#231f20" />
         </svg></a>
     </p>
+
   </footer>
 
 </body>

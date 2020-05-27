@@ -1,0 +1,314 @@
+:root {
+    --general_000000: #000000;
+    --hover_81B3D2: #81B3D2;
+    --text_81B3D2: #81B3D2;
+    --background_hover_669EC0: #669EC0;
+    --background_active_5496BD: #5496BD;
+    --background_button_766357: #766357;
+    --module-link_766357: #766357;
+    --background_button_hover_604E43: #604E43;
+    --background_button_active_503E33: #503E33;
+    --filter_result_list_item-text_333333: #333333;
+    --filter_result_list_item-price_333333: #333333;
+    --filter_result_list_item_raiting_666666: #666666;
+    --button_text_FFFFFF: #FFFFFF;
+    --background_FFFFFF: #FFFFFF;
+    --background_homepage_F2F2F2: #F2F2F2;
+    --input_form_background_normal: #F2F2F2;
+    --input_form_background_hover: #EBEBEB;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/ptsans.woff");
+    src: url("/fonts/ptsans.woff2");
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url("/fonts/ptsansbold.woff");
+    src: url("/fonts/ptsansbold.woff2");
+}
+
+body {
+    color: var(--general_000000, black);
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-weight: 400;
+    background-color: var(--background_homepage_F2F2F2, grey);
+    text-transform: uppercase;
+    margin-left: 40px;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.header {
+    background-color: var(--background_FFFFFF, white);
+}
+
+/* Секция меню */
+
+.navigation_list_item_link {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.navigation_list_item_link:visited {
+    color: var(--general_color, black);
+}
+
+.navigation_list_item_link:hover {
+    color: var(--hover_81B3D2, blue);
+}
+
+.navigation_list_item_link:active {
+    color: var(--general_color, black);
+    mix-blend-mode: normal;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.navigation_list_item_link_active:visited {
+    color: var(--module-link_766357, brown);
+}
+
+/* Секция main */
+
+.section_welcome {
+    background-color: #81B3D3;
+    background-image: url(/img/background_photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section_reasons {
+    background-color: var(--background_FFFFFF, white);
+}
+
+.section_reasons_title {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.section_reasons_text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    color: var(--filter_result_list_item-text_333333, brown);
+}
+
+/* Секция заказа */
+
+.section_order {
+    background-color: var(--background_FFFFFF, white);
+}
+
+.section_order_title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.section_order_text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    color: var(--filter_result_list_item-text_333333, brown);
+}
+
+.section_order_button {
+    font-family: PT Sans;
+    background-color: var(--background_button_766357, brown);
+    border: 1px solid #000000;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    color: var(--button_text_FFFFFF, white);
+}
+
+.section_order_button:hover {
+    background-color: var(--background_button_hover_604E43, brown);
+    
+}
+
+.section_order_button:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: var(--background_button_active_503E33, brown);
+}
+
+.form_search {
+    display: none;
+}
+
+/* Секция footer */
+
+.footer {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.section_contacts {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.section_contacts_developer {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+}
+
+/* Страница catalog */
+
+.filter_result {
+    background-color: var(--background_FFFFFF, white);
+}
+
+.filter_result_matching {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.filter_sorting_buttons {
+    list-style: none;
+}
+
+.filter_result_matching_sorting {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.filter_result_sorting_buttons_item {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.filter_result_sorting_buttons_item_price {
+    color: var(--text_81B3D2, blue);
+}
+
+.filter_result_sorting_buttons_item_type {
+    color: var(--general_color, black);
+    mix-blend-mode: normal;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.filter_result_sorting_buttons_item_type:hover {
+    color: var(--hover_81B3D2, blue);
+}
+
+.filter_result_sorting_buttons_item_type:active {
+    color: var(--general_color, black);
+}
+
+.filter_result_sorting_buttons_item_raiting {
+    color: var(--general_color, black);
+    mix-blend-mode: normal;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.filter_result_sorting_buttons_item_raiting:hover {
+    color: var(--hover_81B3D2, blue);
+}
+
+.filter_result_sorting_buttons_item_raiting:active {
+    color: var(--general_color, black);
+}
+
+/* Каталог найденных отелей */
+
+.filter_result_list_item-title {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.filter_result_list_item-text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--filter_result_list_item-text_333333, black);
+}
+
+.filter_result_list_item_price {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--filter_result_list_item-price_333333, black);
+}
+
+.filter_result_list_item_raiting {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--filter_result_list_item_raiting_666666, black);
+    background-color: var(--background_homepage_F2F2F2, white);   
+}
+
+.filter_result_list_item h3:hover {
+    color: var(--hover_81B3D2, blue);
+}
+
+.filter_result_list_item h3:active {
+    color: var(--general_color, black);
+    mix-blend-mode: normal;
+    opacity: 0.3;
+}
+
+.filter_result_list_item_more_details {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--button_text_FFFFFF, white);
+    background-color: var(--hover_81B3D2, blue);
+}
+
+.filter_result_list_item_more_details:hover {
+    background-color: var(--background_hover_669EC0, blue);
+}
+
+.filter_result_list_item_more_details:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: var(--background_active_5496BD, blue);
+}
+
+.filter_result_list_item_reservation {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--button_text_FFFFFF, white);
+    background-color: var(--background_button_766357, brown);
+}
+
+.filter_result_list_item_reservation:hover {
+    background-color: var(--background_button_hover_604E43, brown);
+}
+
+.filter_result_list_item_reservation:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: var(--background_button_active_503E33, brown);
+}
