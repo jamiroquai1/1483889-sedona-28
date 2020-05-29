@@ -11,6 +11,7 @@
     --active_brown: #503E33;
     --basic_grey: #F2F2F2;
     --active_grey: #EBEBEB;
+    --bg_grey: #EEEEEE;
     /* (используются редко) */
     --special_plus_minus: #A9A9A9;
     --special_border_line: #E5E5E5;
@@ -48,6 +49,7 @@ body {
     min-width: 1200px;
     margin: 0;
     padding: 0;
+    margin-left: 40px;
 }
 
 img {
@@ -114,17 +116,52 @@ a {
 }
 
 .section_reasons_title {
-    font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     text-align: center;
 }
 
 .section_reasons_text {
-    font-weight: normal;
     font-size: 14px;
     line-height: 26px;
     text-align: center;
+    color: var(--special_black);
+}
+
+/* Features */
+
+.features-list {
+    list-style: none;
+    line-height: 21px;
+}
+
+.features-list h3 {
+    font-size: 21px;
+}
+
+.features-list p {
+    font-size: 14px;
+}
+
+.feature-item-blue-bg {
+    color: var(--basic_white);
+    background-color: var(--basic_blue);
+}
+
+.feature-item-white-bg {
+    list-style: none;
+    background-color: var(--basic_white);
+}
+
+.feature-item-white-bg p {
+    color: var(--special_black);
+}
+
+.feature-item-grey-bg {
+    background-color: var(--bg_grey);
+}
+
+.feature-item-grey-bg p {
     color: var(--special_black);
 }
 
@@ -231,6 +268,84 @@ a {
 }
 
 /* Страница catalog */
+
+.filter {
+    width: 100%;
+    background-color: #d2e5f1;
+    color: var(--basic_white);
+    background-image: url(/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.filter legend {
+    font-weight: bold;
+}
+
+fieldset p {
+    font-weight: bold;
+}
+
+fieldset label {
+    font-size: 14px;
+}
+
+.filter ul {
+    list-style: none;
+}
+
+fieldset {
+    border: none;
+}
+
+.button_for_filter {
+    color: var(--basic_white);
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    border: 2px solid var(--basic_white);
+    border-radius: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button_for_filter:hover, .button_for_filter:focus {
+    background-color: var(--basic_white);
+    color: var(--basic_black);
+    cursor: pointer;
+}
+/* 
+.checkbox {
+	position:relative;
+	padding-left:25px;
+}
+.checkbox input[type=checkbox] {
+	display:none;
+}
+.checkbox label:after {
+	content:'';
+	display:block;
+	height:14px;
+	width:14px;
+	outline:1px solid #939598;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.checkbox input[type=checkbox]:checked + label:after {
+	outline:1px solid #939598;
+	border:2px solid #fff;
+	width:10px;
+	height:10px;
+
+} */
+
+
+/* Страница фильтр */
 
 .filter_result {
     background-color: var(--basic_white);
