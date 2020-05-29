@@ -106,9 +106,13 @@ a {
     background-image: url('../img/svg-sedona/intro-mask.svg'), url("../img/background_photo.jpg");
     background-repeat: no-repeat;
     width: 100%;
-    background-size: cover;
+    background-size: 100%, cover;
     background-position: bottom, center;
 }
+
+/* .welcome_section_img {
+    
+} */
 
 .section_reasons {
     background-color: var(--basic_white);
