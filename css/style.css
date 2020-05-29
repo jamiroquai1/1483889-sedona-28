@@ -1,46 +1,58 @@
 :root {
-    --general_000000: #000000;
-    --hover_81B3D2: #81B3D2;
-    --text_81B3D2: #81B3D2;
-    --background_hover_669EC0: #669EC0;
-    --background_active_5496BD: #5496BD;
-    --background_button_766357: #766357;
-    --module-link_766357: #766357;
-    --background_button_hover_604E43: #604E43;
-    --background_button_active_503E33: #503E33;
-    --filter_result_list_item-text_333333: #333333;
-    --filter_result_list_item-price_333333: #333333;
-    --filter_result_list_item_raiting_666666: #666666;
-    --button_text_FFFFFF: #FFFFFF;
-    --background_FFFFFF: #FFFFFF;
-    --background_homepage_F2F2F2: #F2F2F2;
-    --input_form_background_normal: #F2F2F2;
-    --input_form_background_hover: #EBEBEB;
+    /* основные цвета */
+    --basic_white: #FFFFFF;
+    --basic_black: #000000;
+    --special_black: #333333;
+    --basic_blue: #81B3D2;
+    --hover_blue: #669EC0;
+    --active_blue: #5496BD;
+    --basic_brown: #766357;
+    --hover_brown: #604E43;
+    --active_brown: #503E33;
+    --basic_grey: #F2F2F2;
+    --active_grey: #EBEBEB;
+    /* (используются редко) */
+    --special_plus_minus: #A9A9A9;
+    --special_border_line: #E5E5E5;
+    --special_raiting: #666666;
+    --special_arrow: #CACACA;
+    --special_scroll: #ABABAB;
+    /* rbga */
+    --rbga_grey: rgba(255, 255, 255, 0.3);
+    --rbga_black: rgba(0, 0, 0, 0.3);
+    --rgba_light_grey: rgba(255, 255, 255, 0.9);
 }
 
 @font-face {
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 400;
-    src: url("/fonts/ptsans.woff");
     src: url("/fonts/ptsans.woff2");
+    src: url("/fonts/ptsans.woff");
 }
 
 @font-face {
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 700;
-    src: url("/fonts/ptsansbold.woff");
     src: url("/fonts/ptsansbold.woff2");
+    src: url("/fonts/ptsansbold.woff");
 }
 
 body {
-    color: var(--general_000000, black);
     font-family: 'PT Sans', Arial, sans-serif;
     font-weight: 400;
-    background-color: var(--background_homepage_F2F2F2, grey);
     text-transform: uppercase;
-    margin-left: 40px;
+    background-color: var(--basic_grey);
+    color: var(--basic_black);
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .visually-hidden {
@@ -51,47 +63,54 @@ body {
     margin: -1px;
 }
 
-.header {
-    background-color: var(--background_FFFFFF, white);
+a {
+    text-decoration: none;
 }
 
 /* Секция меню */
 
-.navigation_list_item_link {
-    font-weight: bold;
+.navigation {
+    background-color: var(--basic_white);
+}
+
+.navigation_menu {
     font-size: 14px;
     line-height: 26px;
+    list-style: none;
+    font-weight: bold;
 }
 
-.navigation_list_item_link:visited {
-    color: var(--general_color, black);
+.navigation_menu a {
+    color: var(--basic_black);
 }
 
-.navigation_list_item_link:hover {
-    color: var(--hover_81B3D2, blue);
+.navigation_menu a:hover, .navigation_menu a:focus {
+    color: var(--basic_blue);
+    cursor: pointer;
 }
 
-.navigation_list_item_link:active {
-    color: var(--general_color, black);
+.navigation_menu a:active {
+    color: var(--rbga_black);
     mix-blend-mode: normal;
-    color: rgba(0, 0, 0, 0.3);
 }
 
 .navigation_list_item_link_active:visited {
-    color: var(--module-link_766357, brown);
+    color: var(--basic_brown);
 }
 
 /* Секция main */
 
 .section_welcome {
-    background-color: #81B3D3;
-    background-image: url(/img/background_photo.jpg);
+    background-color: #d2e5f1;
+    background-image: url('/img/svg-sedona/intro-mask.svg'), url("/img/background_photo.jpg");
     background-repeat: no-repeat;
+    width: 100%;
     background-size: cover;
+    background-position: bottom, center;
 }
 
 .section_reasons {
-    background-color: var(--background_FFFFFF, white);
+    background-color: var(--basic_white);
 }
 
 .section_reasons_title {
@@ -106,13 +125,13 @@ body {
     font-size: 14px;
     line-height: 26px;
     text-align: center;
-    color: var(--filter_result_list_item-text_333333, brown);
+    color: var(--special_black);
 }
 
 /* Секция заказа */
 
 .section_order {
-    background-color: var(--background_FFFFFF, white);
+    background-color: var(--basic_white);
 }
 
 .section_order_title {
@@ -123,33 +142,34 @@ body {
 }
 
 .section_order_text {
+    font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 26px;
     text-align: center;
-    color: var(--filter_result_list_item-text_333333, brown);
+    color: var(--special_black);
 }
 
 .section_order_button {
-    font-family: PT Sans;
-    background-color: var(--background_button_766357, brown);
-    border: 1px solid #000000;
+    font: var(--basic_black);
+    text-align: center;
+    color: var(--basic_white);
+    border: 1px solid var(--special_black);
     text-transform: uppercase;
+    background-color: var(--basic_brown);
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
-    text-align: center;
-    color: var(--button_text_FFFFFF, white);
 }
 
-.section_order_button:hover {
-    background-color: var(--background_button_hover_604E43, brown);
-    
+.section_order_button:hover, .section_order_button:focus {
+    background-color: var(--hover_brown);
+    cursor: pointer;
 }
 
 .section_order_button:active {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: var(--background_button_active_503E33, brown);
+    color: var(--rbga_grey);
+    background-color: var(--active_brown);
 }
 
 .form_search {
@@ -159,7 +179,11 @@ body {
 /* Секция footer */
 
 .footer {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: var(--rgba_light_grey);
+}
+
+.footer_catalog {
+    background-color: var(--basic_white);
 }
 
 .section_contacts {
@@ -168,17 +192,48 @@ body {
     line-height: 26px;
 }
 
+.section_contacts a {
+    color: var(--basic_black);
+}
+
+.section_social_contacts {
+    text-align: center;
+}
+
+.social_links_list li {
+    list-style: none;
+}
+
+.social_links {
+    background-color: var(--basic_blue);
+}
+
+.social_links:hover, .social_links:focus {
+    background-color: var(--hover_blue);
+}
+
+.social_links:active {
+    background-color: var(--active_blue);
+}
+
+.social_links svg {
+    fill: #FFF;
+}
+
+.social_links:active svg {
+    fill: var(--rbga_grey);
+}
+
 .section_contacts_developer {
     font-weight: normal;
     font-size: 14px;
     line-height: 26px;
-    text-align: center;
 }
 
 /* Страница catalog */
 
 .filter_result {
-    background-color: var(--background_FFFFFF, white);
+    background-color: var(--basic_white);
 }
 
 .filter_result_matching {
@@ -198,8 +253,11 @@ body {
 }
 
 .filter_result_sorting_buttons_item {
-    background-color: transparent;
+    color: var(--basic_black);
+    color: var(--rbga_black);
     border: none;
+    border-bottom: 1px dashed var(--basic_blue);
+    background-color: transparent;
     padding: 0px;
     font-weight: normal;
     font-size: 12px;
@@ -207,36 +265,18 @@ body {
     text-transform: uppercase;
 }
 
-.filter_result_sorting_buttons_item_price {
-    color: var(--text_81B3D2, blue);
+.filter_result_sorting_buttons_item:hover {
+    color: var(--basic_blue);
+    cursor: pointer;
 }
 
-.filter_result_sorting_buttons_item_type {
-    color: var(--general_color, black);
-    mix-blend-mode: normal;
-    color: rgba(0, 0, 0, 0.3);
+.filter_result_sorting_buttons_item:active {
+    color: var(--basic_black);
 }
 
-.filter_result_sorting_buttons_item_type:hover {
-    color: var(--hover_81B3D2, blue);
-}
-
-.filter_result_sorting_buttons_item_type:active {
-    color: var(--general_color, black);
-}
-
-.filter_result_sorting_buttons_item_raiting {
-    color: var(--general_color, black);
-    mix-blend-mode: normal;
-    color: rgba(0, 0, 0, 0.3);
-}
-
-.filter_result_sorting_buttons_item_raiting:hover {
-    color: var(--hover_81B3D2, blue);
-}
-
-.filter_result_sorting_buttons_item_raiting:active {
-    color: var(--general_color, black);
+.filter_result_sorting_buttons_item_active {
+    color: var(--basic_blue);
+    border: none;
 }
 
 /* Каталог найденных отелей */
@@ -251,64 +291,70 @@ body {
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
-    color: var(--filter_result_list_item-text_333333, black);
+    color: var(--special_black);
 }
 
 .filter_result_list_item_price {
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
-    color: var(--filter_result_list_item-price_333333, black);
+    color: var(--special_black);
 }
 
 .filter_result_list_item_raiting {
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
-    color: var(--filter_result_list_item_raiting_666666, black);
-    background-color: var(--background_homepage_F2F2F2, white);   
-}
-
-.filter_result_list_item h3:hover {
-    color: var(--hover_81B3D2, blue);
-}
-
-.filter_result_list_item h3:active {
-    color: var(--general_color, black);
-    mix-blend-mode: normal;
-    opacity: 0.3;
+    color: var(--special_raiting);
+    background-color: var(--basic_grey);
 }
 
 .filter_result_list_item_more_details {
     font-weight: bold;
     font-size: 14px;
     line-height: 21px;
-    color: var(--button_text_FFFFFF, white);
-    background-color: var(--hover_81B3D2, blue);
+    color: var(--basic_white);
+    background-color: var(--basic_blue);
 }
 
 .filter_result_list_item_more_details:hover {
-    background-color: var(--background_hover_669EC0, blue);
+    background-color: var(--hover_blue);
+    cursor: pointer;
 }
 
 .filter_result_list_item_more_details:active {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: var(--background_active_5496BD, blue);
+    color: var(--rbga_grey);
+    background-color: var(--active_blue);
 }
 
 .filter_result_list_item_reservation {
     font-weight: bold;
     font-size: 14px;
     line-height: 21px;
-    color: var(--button_text_FFFFFF, white);
-    background-color: var(--background_button_766357, brown);
+    color: var(--basic_white);
+    background-color: var(--basic_brown);
 }
 
 .filter_result_list_item_reservation:hover {
-    background-color: var(--background_button_hover_604E43, brown);
+    background-color: var(--hover_brown);
+    cursor: pointer;
 }
 
 .filter_result_list_item_reservation:active {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: var(--background_button_active_503E33, brown);
+    color: var(--rbga_grey);
+    background-color: var(--active_brown);
+}
+
+.filter_result_list_item:hover {
+    cursor: pointer;
+}
+
+.filter_result_list_item:hover .filter_result_list_item-title {
+    color: var(--basic_blue);
+}
+
+.filter_result_list_item:active .filter_result_list_item-title {
+    color: var(--basic_black);
+    mix-blend-mode: normal;
+    opacity: 0.3;
 }
