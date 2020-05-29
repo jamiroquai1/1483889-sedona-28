@@ -28,16 +28,16 @@
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 400;
-    src: url("/fonts/ptsans.woff2");
-    src: url("/fonts/ptsans.woff");
+    src: url("../fonts/ptsans.woff2");
+    src: url("../fonts/ptsans.woff");
 }
 
 @font-face {
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 700;
-    src: url("/fonts/ptsansbold.woff2");
-    src: url("/fonts/ptsansbold.woff");
+    src: url("../fonts/ptsansbold.woff2");
+    src: url("../fonts/ptsansbold.woff");
 }
 
 body {
@@ -93,7 +93,6 @@ a {
 
 .navigation_menu a:active {
     color: var(--rbga_black);
-    mix-blend-mode: normal;
 }
 
 .navigation_list_item_link_active:visited {
@@ -104,7 +103,7 @@ a {
 
 .section_welcome {
     background-color: #d2e5f1;
-    background-image: url('/img/svg-sedona/intro-mask.svg'), url("/img/background_photo.jpg");
+    background-image: url('../img/svg-sedona/intro-mask.svg'), url("../img/background_photo.jpg");
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
@@ -273,7 +272,7 @@ a {
     width: 100%;
     background-color: #d2e5f1;
     color: var(--basic_white);
-    background-image: url(/img/background.jpg);
+    background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-weight: normal;
@@ -318,6 +317,7 @@ fieldset {
     color: var(--basic_black);
     cursor: pointer;
 }
+
 /* 
 .checkbox {
 	position:relative;
@@ -343,7 +343,6 @@ fieldset {
 	height:10px;
 
 } */
-
 
 /* Страница фильтр */
 
@@ -470,6 +469,5 @@ fieldset {
 
 .filter_result_list_item:active .filter_result_list_item-title {
     color: var(--basic_black);
-    mix-blend-mode: normal;
     opacity: 0.3;
 }
