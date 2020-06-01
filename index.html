@@ -17,7 +17,7 @@
           alt="Логотип города «Седона»"></a>
 
       <ul class="navigation_menu">
-        <li><a class="navigation_list_item_link_active" href="index.html">Информация</a></li>
+        <li><a class="navigation_list_item_link_active" href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
         <li><a href="#">Карта штата</a></li>
         <li><a href="catalog.html">Гостиницы</a></li>
@@ -30,12 +30,16 @@
     <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
 
     <section class="section_welcome">
-      <img class="welcome_section_img" src="img/svg-sedona/welcome.svg" width="456" height="350" alt="Добро пожаловать в Седону">
+      <img class="welcome_section_img" src="img/svg-sedona/welcome.svg" width="456" height="350"
+        alt="Добро пожаловать в Седону">
     </section>
 
     <section class="section_reasons">
-      <h2 class="section_reasons_title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-      <p class="section_reasons_text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <div class="reasons_header">
+        <h1 class="section_reasons_title">Седона — небольшой городок в Аризоне, <br>
+          заслуживающий большего!</h1>
+        <p class="section_reasons_text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </div>
 
       <ol class="features-list">
         <li class="feature-item"></li>
@@ -45,6 +49,7 @@
           <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
           <img src="img/image-1.jpg" width="800" height="256" alt="Изображение города Седона">
         </div>
+        </li>
 
         <ul class="feature-item-white-bg">
           <li>
@@ -65,7 +70,6 @@
             <p>Не только китайского, но и местного производства!</p>
           </li>
         </ul>
-        </li>
 
         <li class="feature-item"></li>
         <div class="feature-item-blue-bg ">
@@ -98,14 +102,18 @@
     </section>
 
     <section class="section_order">
-      <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-      <p class="section_order_title">Заинтересовались?</p>
-      <p class="section_order_text">Укажите предполагаемые даты поездки, <br>
-        и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button class="section_order_button" type="button">Поиск гостиницы в Седоне</button>
+      <div class="section_order_intro">
+        <h2 class="section_order_title">Заинтересовались?</h2>
+        <p class="section_order_text">Укажите предполагаемые даты поездки, <br>
+          и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button class="section_order_button" type="button">Поиск гостиницы в Седоне</button>
+      </div>
+      <div class="map">
+        <img src="img/map.jpg" width="1199" height="594" alt="Седона на карте Google Map">
+      </div>
+    </section>
 
-
-      <!-- Форма поиска -->
+    <!--       
       <div class="form_search">
         <form action="https://echo.htmlacademy.ru" method="post">
           <div>
@@ -133,7 +141,7 @@
           <div>
             <label for="number-adults">Взрослые:</label>
             <input type="number" id="number-adults" name="number-adults" value="2" min="1" max="10" required>
-            <!-- пустой тег button для "+"" и "-"" -->
+            
             <button></button>
             <button></button>
           </div>
@@ -141,17 +149,15 @@
           <div>
             <label for="children-number">Дети:</label>
             <input type="number" id="children-number" name="children-number" value="0" min="0" max="10">
-            <!-- пустой тег button для "+"" и "-"" -->
+           
             <button></button>
             <button></button>
           </div>
 
           <button type="submit">Найти</button>
         </form>
-      </div>
+      </div> -->
 
-      <img src="img/map.jpg" width="1199" height="594" alt="Седона на карте Google Map">
-    </section>
 
   </main>
 
@@ -159,16 +165,16 @@
 
     <section class="section_contacts">
       <h2 class="visually-hidden">Наши контакты</h2>
-      <p>
-        #VISITSEDONA<br>
-        <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
+      <p class="section_contact_text">
+        #VISITSEDONA
       </p>
+      <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
     </section>
 
     <section class="section_social_contacts">
       <h2 class="visually-hidden">Наши соцсети</h2>
-      <ul class="social_links_list">
-        <li><a class="social_links" href="https://twitter.com/">
+      <ul class="social_link_list">
+        <li><a class="social_link" href="https://twitter.com/">
             <span class="visually-hidden">Twitter</span>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15"
               viewBox="0 0 17 15">
@@ -176,12 +182,12 @@
                 d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z" />
             </svg></a></li>
 
-        <li><a class="social_links" href="https://www.facebook.com/">
+        <li><a class="social_link" href="https://www.facebook.com/">
             <span class="visually-hidden">Facebook</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
               <path d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" /></svg></a></li>
 
-        <li><a class="social_links" href="https://www.youtube.com/">
+        <li><a class="social_link" href="https://www.youtube.com/">
             <span class="visually-hidden">YouTube</span>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16"
               viewBox="0 0 20 16">
@@ -193,7 +199,7 @@
 
     <section class="section_contacts_developer">
       <h2 class="visually-hidden">Наша вебстудия</h2>
-      WEBSITE BY
+      <span class="section_contacts_developer_website">WEBSITE BY</span>
       <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
         <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="115" height="41"
           viewBox="0 0 108.08 36.85">

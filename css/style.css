@@ -46,10 +46,10 @@ body {
     text-transform: uppercase;
     background-color: var(--basic_grey);
     color: var(--basic_black);
-    min-width: 1200px;
-    margin: 0;
-    padding: 0;
-    margin-left: 40px;
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0px 0px 15px 5px rgba(0, 1, 1, 0.2);
 }
 
 img {
@@ -73,6 +73,7 @@ a {
 
 .navigation {
     background-color: var(--basic_white);
+    position: relative;
 }
 
 .navigation_menu {
@@ -80,6 +81,48 @@ a {
     line-height: 26px;
     list-style: none;
     font-weight: bold;
+    height: 56px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.navigation_menu li {
+    display: block;
+    width: 170px;
+}
+
+.navigation_menu li:nth-child(1) {
+    margin-left: 71px;
+    text-align: left;
+}
+
+.navigation_menu li:nth-child(2) {
+    margin-left: 61px;
+    text-align: left;
+}
+
+.navigation_menu li:nth-child(2) {
+    margin-left: 61px;
+    text-align: left;
+}
+
+.navigation_menu li:nth-child(3) {
+    margin-left: 260px;
+    text-align: right;
+}
+
+.navigation_menu li:nth-child(4) {
+    margin-left: 57px;
+    text-align: right;
+}
+
+.navigation_logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .navigation_menu a {
@@ -102,33 +145,60 @@ a {
 /* Секция main */
 
 .section_welcome {
+    width: 1200px;
+    height: 509px;
     background-color: #d2e5f1;
     background-image: url('../img/svg-sedona/intro-mask.svg'), url("../img/background_photo.jpg");
     background-repeat: no-repeat;
-    width: 100%;
     background-size: 100%, cover;
     background-position: bottom, center;
 }
 
-/* .welcome_section_img {
-    
-} */
+.welcome_section_img {
+    width: 456px;
+    padding-top: 77px;
+    padding-bottom: 80px;
+    display: block;
+    margin: 0 auto;
+}
 
 .section_reasons {
+    width: 1200px;
+    margin: 0 auto;
     background-color: var(--basic_white);
 }
 
+.reasons_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 43px;
+    padding-bottom: 51px;
+}
+
 .section_reasons_title {
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 17px;
+    text-align: center;
     font-size: 21px;
     line-height: 26px;
-    text-align: center;
+    text-transform: uppercase;
 }
 
 .section_reasons_text {
+    margin: 0px;
+    padding: 0px;
     font-size: 14px;
-    line-height: 26px;
     text-align: center;
+    line-height: 26px;
+    text-transform: uppercase;
     color: var(--special_black);
+}
+
+.section_reasons ol {
+    margin: 0;
+    padding: 0;
 }
 
 /* Features */
@@ -140,6 +210,7 @@ a {
 
 .features-list h3 {
     font-size: 21px;
+    margin: 0;
 }
 
 .features-list p {
@@ -174,27 +245,39 @@ a {
     background-color: var(--basic_white);
 }
 
+.section_order_intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 58px;
+    background-color: var(--basic_white);
+}
+
 .section_order_title {
+    margin-top: 0px;
     font-weight: bold;
     font-size: 30px;
     line-height: 24px;
-    text-align: center;
+    margin-bottom: 32px;
 }
 
 .section_order_text {
+    margin-top: 0px;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 26px;
-    text-align: center;
     color: var(--special_black);
+    margin-bottom: 39px;
+    text-align: center;
 }
 
 .section_order_button {
+    padding: 30px 125px;
     font: var(--basic_black);
     text-align: center;
     color: var(--basic_white);
-    border: 1px solid var(--special_black);
+    border: none;
     text-transform: uppercase;
     background-color: var(--basic_brown);
     font-weight: bold;
@@ -219,10 +302,16 @@ a {
 /* Секция footer */
 
 .footer {
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
     background-color: var(--rgba_light_grey);
+    align-items: center;
+    padding: 0 101px 0 117px;
 }
 
 .footer_catalog {
+    display: flex;
     background-color: var(--basic_white);
 }
 
@@ -240,34 +329,57 @@ a {
     text-align: center;
 }
 
-.social_links_list li {
+.social_link_list {
+    display: flex;
+    margin: 0;
+    padding: 0px;
     list-style: none;
 }
 
-.social_links {
-    background-color: var(--basic_blue);
+.social_link_list li:not(:last-child) {
+    margin-right: 6px;
 }
 
-.social_links:hover, .social_links:focus {
+.social_link {
+    background-color: var(--basic_blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 48px;
+}
+
+.section_contact_text {
+    margin-top: 0;
+    margin-bottom: 9px;
+}
+
+.social_link:hover, .social_link:focus {
     background-color: var(--hover_blue);
 }
 
-.social_links:active {
+.social_link:active {
     background-color: var(--active_blue);
 }
 
-.social_links svg {
+.social_link svg {
     fill: #FFF;
 }
 
-.social_links:active svg {
+.social_link:active svg {
     fill: var(--rbga_grey);
 }
 
 .section_contacts_developer {
+    display: flex;
+    align-items: center;
     font-weight: normal;
     font-size: 14px;
     line-height: 26px;
+}
+
+.section_contacts_developer_website {
+    margin-right: 8px;
 }
 
 /* Страница catalog */
@@ -354,20 +466,46 @@ fieldset {
     background-color: var(--basic_white);
 }
 
+.filter_result_list {
+    display: flex;
+    align-items: center;
+    height: 86px;
+    padding: 0 73px 0 73px;
+}
+
 .filter_result_matching {
+    margin: 0;
+    padding-top: 29px;
+    padding-bottom: 31px;
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
 }
 
 .filter_sorting_buttons {
-    list-style: none;
+    margin: 0;
+    padding-top: 32px;
+    padding-bottom: 36px;
+    display: flex;
+    align-items: center;
+}
+
+.arrows_filter {
+    padding-top: 40px;
+    padding-bottom: 36px;
+    align-items: center;
+    margin-left: 503px;
+}
+
+.filter_sorting_buttons li:not(:last-child) {
+    margin-right: 33px;
 }
 
 .filter_result_matching_sorting {
     font-weight: normal;
     font-size: 12px;
     line-height: 18px;
+    padding: 31px 40px 37px 46px;
 }
 
 .filter_result_sorting_buttons_item {
@@ -398,6 +536,11 @@ fieldset {
 }
 
 /* Каталог найденных отелей */
+
+ul {
+    list-style: none;
+    padding: 0;
+}
 
 .filter_result_list_item-title {
     font-weight: bold;
