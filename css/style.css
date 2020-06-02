@@ -484,17 +484,12 @@ fieldset {
 
 .filter_sorting_buttons {
     margin: 0;
-    padding-top: 32px;
-    padding-bottom: 36px;
     display: flex;
     align-items: center;
 }
 
 .arrows_filter {
-    padding-top: 40px;
-    padding-bottom: 36px;
-    align-items: center;
-    margin-left: 503px;
+    margin-left: auto;
 }
 
 .filter_sorting_buttons li:not(:last-child) {
