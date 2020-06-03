@@ -17,10 +17,10 @@
           alt="Логотип города «Седона»"></a>
 
       <ul class="navigation_menu">
-        <li><a class="navigation_list_item_link_active" href="#">Информация</a></li>
-        <li><a href="#">Фото и видео</a></li>
-        <li><a href="#">Карта штата</a></li>
-        <li><a href="catalog.html">Гостиницы</a></li>
+        <li class="navigation_menu_item"><a class="navigation_menu_item_link" href="#">Информация</a></li>
+        <li class="navigation_menu_item"><a class="navigation_menu_item_link" href="#">Фото и видео</a></li>
+        <li class="navigation_menu_item"><a class="navigation_menu_item_link" href="#">Карта штата</a></li>
+        <li class="navigation_menu_item"><a class="navigation_menu_item_link" href="catalog.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -30,7 +30,7 @@
     <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
 
     <section class="section_welcome">
-      <img class="welcome_section_img" src="img/svg-sedona/welcome.svg" width="456" height="350"
+      <img class="welcome_section_img" src="img/svg-sedona/welcome.svg" width="457" height="351"
         alt="Добро пожаловать в Седону">
     </section>
 
@@ -41,63 +41,72 @@
         <p class="section_reasons_text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
 
-      <ol class="features-list">
-        <li class="feature-item"></li>
-        <div class="feature-item-blue-bg">
-          <h3>Настоящий городок</h3>
-          <p>— №1 —</p>
-          <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-          <img src="img/image-1.jpg" width="800" height="256" alt="Изображение города Седона">
-        </div>
-        </li>
-
-        <ul class="feature-item-white-bg">
+      <div class="features-list">
+        <ul class="feature-item-blue-bg">
           <li>
-            <div></div>
-            <h3>Жильё</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <h3>Настоящий<br>городок</h3>
+            <p class="number">— №1 —</p>
+            <p class="paragraph_blue">Седона - не аттракцион для туристов, там <br> течёт своя жизнь</p>
           </li>
-
           <li>
-            <div></div>
-            <h3>Еда</h3>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </li>
-
-          <li>
-            <div></div>
-            <h3>Сувениры</h3>
-            <p>Не только китайского, но и местного производства!</p>
+            <img src="img/image-1.jpg" width="800" height="256" alt="Изображение города Седона">
           </li>
         </ul>
 
-        <li class="feature-item"></li>
-        <div class="feature-item-blue-bg ">
-          <img src="img/image.jpg" width="800" height="256" alt="Изображение Моста Дьявола в городе Седона">
-          <h3>Там есть Мост дьявола</h3>
-          <p>— №2 —</p>
-          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-        </div>
-        </li>
+        <ul class="feature-item-white-bg">
+          <li>
+            <img class="imggg" src="/img/svg-sedona/icon-1.svg" alt="">
+            <h3>Жильё</h3>
 
-        <li class="feature-item-grey-bg">
-          <h3>Небольшая площадь</h3>
-          <p>— №3 —</p>
-          <p>Все достопримечательности находятся очень близко</p>
-        </li>
+            <p>Рекомендуем пожить в настоящем <br>мотеле, всё как в кино!</p>
+          </li>
 
-        <li class="feature-item-grey-bg">
-          <h3>Красивая дорога</h3>
-          <p>— №4 —</p>
-          <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
-        </li>
+          <li>
+            <img class="imggg" src="/img/svg-sedona/icon-3.svg" alt="">
+            <h3>Еда</h3>
+            <p>Всегда заказывайте фирменный бургер, <br>вы не разочаруетесь!</p>
+          </li>
 
-        <li class="feature-item-grey-bg">
-          <h3>Мало туристов</h3>
-          <p>— №5 —</p>
-          <p>Большинство едет в гранд каньон и толпится там</p>
-        </li>
-      </ol>
+          <li>
+            <img class="imggg" src="/img/svg-sedona/icon-2.svg" alt="">
+            <h3>Сувениры</h3>
+            <p>Не только китайского, но и местного <br> производства!</p>
+          </li>
+        </ul>
+
+
+        <ul class="feature-item-blue-bg-second">
+          <li>
+            <img src="img/image.jpg" width="800" height="256" alt="Изображение Моста Дьявола в городе Седона">
+          </li>
+          <li>
+            <h3>Там есть <br>Мост дьявола</h3>
+            <p class="number">— №2 —</p>
+            <p class="paragraph_blue_second">Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
+          </li>
+        </ul>
+
+
+        <ul class="feature-item-grey-bg">
+          <li>
+            <h3>Небольшая <br> площадь</h3>
+            <p class="number">— №3 —</p>
+            <p class="paragraph_grey">Все достопримечательности<br> находятся очень близко</p>
+          </li>
+
+          <li>
+            <h3>Красивая<br> дорога</h3>
+            <p class="number">— №4 —</p>
+            <p class="paragraph_grey">Ехать в седону из лас-вегаса совсем<br> не скучно!</p>
+          </li>
+
+          <li>
+            <h3>Мало <br> туристов</h3>
+            <p class="number">— №5 —</p>
+            <p class="paragraph_grey">Большинство едет в гранд каньон <br> и толпится там</p>
+          </li>
+        </ul>
+      </div>
 
     </section>
 
@@ -163,15 +172,15 @@
 
   <footer class="footer">
 
-    <section class="section_contacts">
+    <section class="footer_item footer_item_social_contacts">
       <h2 class="visually-hidden">Наши контакты</h2>
-      <p class="section_contact_text">
+      <p class="footer_item_text">
         #VISITSEDONA
       </p>
       <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
     </section>
 
-    <section class="section_social_contacts">
+    <section class="footer_item footer_item_social_links">
       <h2 class="visually-hidden">Наши соцсети</h2>
       <ul class="social_link_list">
         <li><a class="social_link" href="https://twitter.com/">
@@ -197,9 +206,9 @@
       </ul>
     </section>
 
-    <section class="section_contacts_developer">
+    <section class="footer_item footer_item_developer">
       <h2 class="visually-hidden">Наша вебстудия</h2>
-      <span class="section_contacts_developer_website">WEBSITE BY</span>
+      <span class="footer_item_developer_website">WEBSITE BY</span>
       <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
         <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="115" height="41"
           viewBox="0 0 108.08 36.85">
