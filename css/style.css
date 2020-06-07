@@ -364,8 +364,76 @@ a {
     text-transform: uppercase;
 }
 
+.form_order_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 29px;
+}
+
+.form_order_item_label {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.form_order_item_control {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    background-color: var(--basic_grey);
+    padding: 6px 30px 6px 13px;
+    border: none;
+    width: 346px;
+    color: var(--basic_black);
+    text-transform: uppercase;
+}
+
+.form_order_item_control::placeholder {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--basic_black);
+    text-transform: uppercase;
+}
+
+.form_order_item_btn {
+    padding: 0;
+    width: 21px;
+    height: 22px;
+    position: absolute;
+    top: 50%;
+    right: 9px;
+    background-color: transparent;
+    border: none;
+    transform: translate(0, -50%);
+}
+
 .form_wrapper {
     position: relative;
+}
+
+.form_order_item_control_person {
+    text-align: center;
+    padding: 0px;
+    height: 38px;
+    width: 38px;
+    border: none;
+    background-color: var(--basic_grey);
+}
+
+.form_order_item_btn_peson {
+    display: block;
+    padding: 0;
+    height: 38px;
+    width: 38px;
+    border: none;
+    background-color: var(--basic_grey);
+}
+
+.form_order_item_inner {
+    display: flex;
 }
 
 .section_order {

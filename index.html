@@ -115,10 +115,12 @@
           <button class="section_order_button" type="button">Поиск гостиницы в Седоне</button>
 
           <form class="form_order" action="https://echo.htmlacademy.ru" method="post">
-            <div>
-              <label for="arrival-date">Дата заезда:</label>
-              <input type="text" id="arrival-date" name="arrival-date" value="2017-04-24" required>
-              <button><svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+            <div class="form_order_item">
+              <label class="form_order_item_label" for="arrival-date">Дата заезда:</label>
+              <input class="form_order_item_control" type="text" id="arrival-date" name="arrival-date"
+                placeholder="24 апреля 2017" required>
+              <button class="form_order_item_btn"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="22"
+                  viewBox="0 0 21 22">
                   <path
                     d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
                   <path
@@ -126,10 +128,12 @@
                 </svg></button>
             </div>
 
-            <div>
-              <label for="departure-date">Дата выезда:</label>
-              <input type="text" id="departure-date" name="departure-date" value="2017-07-04" required>
-              <button><svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+            <div class="form_order_item">
+              <label class="form_order_item_label" for="departure-date">Дата выезда:</label>
+              <input class="form_order_item_control" type="text" id="departure-date" name="departure-date"
+                placeholder="4 июля 2017" required>
+              <button class="form_order_item_btn"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="22"
+                  viewBox="0 0 21 22">
                   <path
                     d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
                   <path
@@ -137,20 +141,30 @@
                 </svg></button>
             </div>
 
-            <div>
-              <label for="number-adults">Взрослые:</label>
-              <input type="number" id="number-adults" name="number-adults" value="2" min="1" max="10" required>
+            <div class="form_order_item">
+              <div class="form_order_item_inner">
+                <label class="form_order_item_label"  for="number-adults">Взрослые:</label>
+                <button class="form_order_item_btn_peson"><svg width="12" height="3" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="12" height="3" fill="#A9A9A9"/>
+                  </svg></button>
+                <input class="form_order_item_control form_order_item_control_person" type="number" id="number-adults" name="number-adults" value="2" min="1" max="10" required>
+                <button class="form_order_item_btn_peson"><svg width="11" height="11" viewBox="0 0 11 11"xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
+                  </svg>
+                  </button>
+              </div>
 
-              <button></button>
-              <button></button>
-            </div>
-
-            <div>
-              <label for="children-number">Дети:</label>
-              <input type="number" id="children-number" name="children-number" value="0" min="0" max="10">
-
-              <button></button>
-              <button></button>
+              <div class="form_order_item_inner">
+                <label class="form_order_item_label"  for="children-number">Дети:</label>
+                <button class="form_order_item_btn_peson"><svg width="12" height="3" viewBox="0 0 12 3"  xmlns="http://www.w3.org/2000/svg">
+                  <rect width="12" height="3" fill="#A9A9A9"/>
+                  </svg></button>
+                <input class="form_order_item_control form_order_item_control_person" type="number" id="children-number" name="children-number" value="0" min="0" max="10">
+                <button class="form_order_item_btn_peson"><svg width="11" height="11" viewBox="0 0 11 11"  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
+                  </svg>
+                  </button>
+              </div>
             </div>
 
             <button class="form_order_search_btn" type="submit">Найти</button>
