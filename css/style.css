@@ -332,7 +332,7 @@ a {
     color: var(--basic_black);
 }
 
-.feature_item_grey_bg h3 {
+.feature_item_grey_bg_advantages h3 {
     margin: 0;
 }
 
@@ -342,6 +342,31 @@ a {
 }
 
 /* Секция заказа */
+
+.form_order {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--basic_white);
+    padding: 55px;
+    width: 100%;
+}
+
+.form_order_search_btn {
+    width: 100%;
+    background-color: var(--basic_blue);
+    padding: 16px 0px;
+    border: none;
+    color: var(--basic_white);
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.form_wrapper {
+    position: relative;
+}
 
 .section_order {
     background-color: var(--basic_white);
