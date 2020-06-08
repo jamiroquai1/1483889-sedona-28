@@ -364,6 +364,16 @@ a {
     text-transform: uppercase;
 }
 
+.form_order_search_btn:hover, .form_order_search_btn:focus {
+    background-color: var(--hover_blue);
+    cursor: pointer;
+}
+
+.form_order_search_btn:active {
+    background-color: var(--active_blue);
+    color: var(--rbga_grey);
+}
+
 .form_order_item {
     display: flex;
     justify-content: space-between;
@@ -388,6 +398,16 @@ a {
     width: 346px;
     color: var(--basic_black);
     text-transform: uppercase;
+}
+
+.form_order_item_control:hover {
+    background-color: var(--active_grey);
+    cursor: pointer;
+}
+
+.form_order_item_control:focus {
+    background-color: var(--basic_white);
+    cursor: pointer;
 }
 
 .form_order_item_control::placeholder {
@@ -423,8 +443,10 @@ a {
     background-color: var(--basic_grey);
 }
 
-.form_order_item_btn_peson {
-    display: block;
+.form_order_item_btn_person {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0;
     height: 38px;
     width: 38px;
@@ -432,8 +454,35 @@ a {
     background-color: var(--basic_grey);
 }
 
+.form_order_item_btn_person svg {
+    fill: var(--special_plus_minus);
+    cursor: pointer;
+}
+
+.form_order_item_btn_person:hover svg {
+    fill: var(--basic_black);
+    cursor: pointer;
+}
+
+.form_order_item_btn_person:active svg {
+    fill: var(--basic_blue);
+}
+
+.form_order_item_label_adult {
+    margin-right: 40px;
+}
+
+.form_order_item_label_kids {
+    margin-right: 29px;
+}
+
 .form_order_item_inner {
     display: flex;
+    align-items: center;
+}
+
+.form_order_item:last-of-type {
+    margin-bottom: 54px;
 }
 
 .section_order {
@@ -589,6 +638,18 @@ a {
     margin-right: 8px;
 }
 
+.htmlacademy_btn svg {
+    fill: #231F20;
+}
+
+.htmlacademy_btn:hover svg {
+    fill: var(--basic_blue);
+}
+
+.htmlacademy_btn:active svg {
+    fill: #BDBBBC;
+}
+
 /* Страница catalog */
 
 .filter {
@@ -636,6 +697,9 @@ a {
 /* Toggle */
 
 .price_per_day_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0px;
     padding: 0px;
     margin-left: auto;
@@ -666,21 +730,21 @@ a {
 
 .range-controls .scale {
     height: 2px;
-    background-color: var(--basic_white);
-    opacity: 0.3;
+    background-color: var(--rbga_grey);
     margin-bottom: 32px;
 }
 
 .range-controls .bar {
     height: 2px;
     background-color: var(--basic_white);
+    width: 80%;
 }
 
 .range-controls .toggle {
     position: absolute;
-    top: -10px;
-    width: 4px;
-    height: 4px;
+    top: -9px;
+    width: 19px;
+    height: 19px;
     border: 8px solid #ffffff;
     border-radius: 50%;
     cursor: pointer;
