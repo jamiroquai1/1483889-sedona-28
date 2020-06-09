@@ -700,25 +700,36 @@ a {
     opacity: 0;
 }
 
-.form_checkbox_btn_on {
-    padding: 0px;
-    border: none;
-    background-color: transparent;
-    margin-right: 13px;
+.custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    border: 2px solid var(--basic_white);
+    margin-right: 16px;
+    border-radius: 2px;
+    background-repeat: no-repeat;
+    
 }
 
-.form_checkbox_btn_off {
-    padding: 0px;
-    border: none;
-    background-color: transparent;
-    margin-right: 18px;
+/* .custom-checkbox+label::before {
+    content: '';
+    width: 23px;
+    height: 23px;
+    background-image: url("/img/svg-sedona/checkbox-off.svg");
+    margin-right: 16px;
+} */
+
+.custom-checkbox:checked+label::after {
+    content: '';
+    position: absolute;
+    width: 27px;
+    height: 24px;
+    background-image: url("/img/svg-sedona/checkbox-on.svg");
+    background-repeat: no-repeat;
+  
 }
 
-.checkbox {
-    display: flex;
-    font-weight: normal;
-    font-size: 14px;
-}
 
 /* Toggle */
 
@@ -767,9 +778,9 @@ a {
 }
 
 .price-controls_img {
-margin: 0px auto;
-
+    margin: 0px auto;
 }
+
 .range-filter {
     margin-top: 20px;
 }
