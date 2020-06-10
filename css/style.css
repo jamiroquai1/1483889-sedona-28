@@ -408,6 +408,8 @@ a {
 .form_order_item_control:focus {
     background-color: var(--basic_white);
     cursor: pointer;
+    outline: 0;
+    box-shadow: 0 0 0 2px var(--special_border_line);
 }
 
 .form_order_item_control::placeholder {
@@ -451,7 +453,6 @@ a {
     height: 38px;
     width: 38px;
     border: none;
-    background-color: var(--basic_grey);
 }
 
 .form_order_item_btn_person svg {
@@ -700,36 +701,32 @@ a {
     opacity: 0;
 }
 
+.custom-checkbox+label {
+    position: relative;
+    padding-left: 40px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
 .custom-checkbox+label::before {
     content: '';
-    display: inline-block;
-    width: 23px;
-    height: 23px;
-    border: 2px solid var(--basic_white);
-    margin-right: 16px;
-    border-radius: 2px;
-    background-repeat: no-repeat;
-    
-}
-
-/* .custom-checkbox+label::before {
-    content: '';
-    width: 23px;
-    height: 23px;
-    background-image: url("/img/svg-sedona/checkbox-off.svg");
-    margin-right: 16px;
-} */
-
-.custom-checkbox:checked+label::after {
-    content: '';
     position: absolute;
+    margin-left: 1px;
+    top: 0;
+    left: 0;
     width: 27px;
     height: 24px;
-    background-image: url("/img/svg-sedona/checkbox-on.svg");
+    background-image: url("../img/svg-sedona/checkbox-off.svg");
     background-repeat: no-repeat;
-  
 }
 
+.custom-checkbox:checked+label::before {
+    background-image: url("../img/svg-sedona/checkbox-on.svg");
+}
+
+.custom-checkbox:disabled+label::before {
+    opacity: 0.3;
+}
 
 /* Toggle */
 
@@ -746,38 +743,30 @@ a {
     margin-bottom: 10px;
 }
 
-.price-controls {
+.price_controls {
     display: flex;
     flex-direction: row;
+    border: 2px solid var(--basic_white);
+    border-radius: 2px;
+    background-image: url("../img/svg-sedona/Rectangle.svg");
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.number_one {
+.price_controls_input {
     background-color: transparent;
     color: var(--basic_white);
     width: 159px;
     height: 36px;
     text-align: center;
     border: none;
-    border-bottom: 2px solid #FFFFFF;
-    border-top: 2px solid #FFFFFF;
-    border-left: 2px solid #FFFFFF;
-    box-sizing: border-box;
 }
 
-.number_two {
-    background-color: transparent;
+.price_controls_input::placeholder {
     color: var(--basic_white);
-    width: 159px;
-    height: 36px;
-    text-align: center;
-    border: none;
-    border-bottom: 2px solid #FFFFFF;
-    border-top: 2px solid #FFFFFF;
-    border-right: 2px solid #FFFFFF;
-    box-sizing: border-box;
 }
 
-.price-controls_img {
+.price_controls_img {
     margin: 0px auto;
 }
 
@@ -801,14 +790,18 @@ a {
     width: 80%;
 }
 
-.range-controls .toggle {
+.toggle {
     position: absolute;
     top: -9px;
-    width: 19px;
-    height: 19px;
-    border: 8px solid #ffffff;
-    border-radius: 50%;
+    width: 20px;
+    height: 22px;
     cursor: pointer;
+    background-image: url("../img/svg-sedona/filter-button.svg");
+    transition: transform 0.3s linear;
+}
+
+.toggle:hover {
+    transform: scale(1.1);
 }
 
 .filter legend {
