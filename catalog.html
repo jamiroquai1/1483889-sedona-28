@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="Седона, город в США, Аризона, туризм">
+    <meta name="description" content="Веб-сайт города Седона в Аризоне, США">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -34,72 +36,72 @@
         <section>
             <h2 class="visually-hidden">Фильтр по гостиницам Седоны</h2>
             <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-                <fieldset class="infrastructure">
+                <fieldset class="filter_infrastructure">
                     <legend>Инфраструктура:</legend>
                     <ul>
                         <li>
 
-                            <input type="checkbox" class="custom-checkbox" name="pool" id="filter-pool" checked>
+                            <input type="checkbox" class="filter_custom_checkbox" name="pool" id="filter-pool" checked>
                             <label for="filter-pool">Бассейн</label>
 
                         </li>
 
-                        <li class="checkbox">
+                        <li>
 
-                            <input type="checkbox" class="custom-checkbox" name="parking" id="filter-parking">
+                            <input type="checkbox" class="filter_custom_checkbox" name="parking" id="filter-parking">
                             <label for="filter-parking">Парковка</label>
                         </li>
 
-                        <li class="checkbox">
+                        <li>
 
-                            <input type="checkbox" class="custom-checkbox" name="internet" id="filter-wifi">
+                            <input type="checkbox" class="filter_custom_checkbox" name="internet" id="filter-wifi">
                             <label for="filter-wifi">Wi-Fi</label>
                         </li>
                     </ul>
                 </fieldset>
 
-                <fieldset class="accommodation_type">
+                <fieldset class="filter_accommodation_type">
                     <legend>Тип жилья:</legend>
                     <ul>
-                        <li class="checkbox">
+                        <li>
 
-                            <input type="checkbox" class="custom-checkbox" name="hotel" id="filter-hotel" checked>
+                            <input type="checkbox" class="filter_custom_checkbox" name="hotel" id="filter-hotel" checked>
                             <label for="filter-hotel">Гостиница</label>
                         </li>
 
-                        <li class="checkbox">
+                        <li>
 
-                            <input type="checkbox" class="custom-checkbox" name="motel" id="filter-motel" checked>
+                            <input type="checkbox" class="filter_custom_checkbox" name="motel" id="filter-motel" checked>
                             <label for="filter-motel">Мотель</label>
                         </li>
 
-                        <li class="checkbox">
+                        <li>
 
-                            <input type="checkbox" class="custom-checkbox" name="apartments" id="filter-apartments"
+                            <input type="checkbox" class="filter_custom_checkbox" name="apartments" id="filter-apartments"
                                 checked>
                             <label for="filter-apartments">Апартаменты</label>
                         </li>
                     </ul>
                 </fieldset>
 
-                <fieldset class="price_per_day_form">
-                    <legend class="price_per_day_form_legend">Стоимость в сутки (Р):</legend>
-                    <div class="price_controls">
-                        <input class="price_controls_input" type="number" name="min-price" placeholder="ОТ 0">
-                        <input class="price_controls_input" type="number" name="max-price" placeholder="ДО 3000">
+                <fieldset class="filter_price_per_day_form">
+                    <legend class="filter_price_per_day_form_legend">Стоимость в сутки (Р):</legend>
+                    <div class="filter_price_per_day_form_controls">
+                        <input class="filter_price_per_day_form_input" type="number" name="min-price" placeholder="ОТ 0">
+                        <input class="filter_price_per_day_form_input" type="number" name="max-price" placeholder="ДО 3000">
                     </div>
 
-                    <div class="range-filter">
-                        <div class="range-controls">
-                            <div class="scale">
-                                <div class="bar"></div>
+                    <div class="filter_price_per_day_form_range_filter">
+                        <div class="filter_price_per_day_form_range_controls">
+                            <div class="filter_price_per_day_form_scale">
+                                <div class="filter_price_per_day_form_bar"></div>
 
                             </div>
-                            <div class="toggle toggle-min" tabindex="0" style="left: 0%"></div>
-                            <div class="toggle toggle-max" tabindex="0" style="left: 80%"></div>
+                            <div class="filter_price_per_day_form_toggle toggle-min" tabindex="0" style="left: 0%"></div>
+                            <div class="filter_price_per_day_form_toggle toggle-max" tabindex="0" style="left: 80%"></div>
                         </div>
                     </div>
-                    <button class="button_for_filter" type="submit">Показать</button>
+                    <button class="filter_price_per_day_form_button" type="submit">Показать</button>
 
                 </fieldset>
 
