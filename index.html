@@ -29,7 +29,7 @@
 
   <main>
 
-     <section class="section_welcome">
+    <section class="section_welcome">
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
       <img class="section_welcome_img" src="img/svg-sedona/welcome.svg" width="457" height="351"
         alt="Добро пожаловать в Седону">
@@ -113,9 +113,9 @@
         <p class="section_order_text">Укажите предполагаемые даты поездки, <br>
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <div class="form_wrapper">
-          <button class="section_order_button" type="button">Поиск гостиницы в Седоне</button>
+          <button onClick="myFunction()" class="section_order_button" type="button">Поиск гостиницы в Седоне</button>
 
-          <form class="form_order" action="https://echo.htmlacademy.ru" method="post">
+          <form class="form_order modal" action="https://echo.htmlacademy.ru" method="post">
             <div class="form_order_item">
               <label class="form_order_item_label" for="arrival-date">Дата заезда:</label>
               <input class="form_order_item_control" type="text" id="arrival-date" name="arrival-date"
@@ -249,7 +249,7 @@
 
 
 
-
+  <script src="/js/script.js"></script>
 
 </body>
 
