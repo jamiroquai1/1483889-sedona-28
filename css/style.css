@@ -1248,7 +1248,7 @@ fieldset {
 }
 
 .modal {
-    transition: inherit;
+    transition: transform 0.8s ease;
     position: absolute;
     transform: translate(-50%, -1000%);
     top: 0;
