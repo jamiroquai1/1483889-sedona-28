@@ -911,7 +911,7 @@ fieldset {
     flex-direction: row;
     border: 2px solid var(--basic_white);
     border-radius: 2px;
-    background-image: url("../img/svg-sedona/Rectangle.svg");
+    background-image: url("../img/svg-sedona/rectangle.svg");
     background-position: center;
     background-repeat: no-repeat;
 }

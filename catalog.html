@@ -89,9 +89,11 @@
                 <fieldset class="filter_price_per_day_form">
                     <legend class="filter_price_per_day_form_legend">Стоимость в сутки (Р):</legend>
                     <div class="filter_price_per_day_form_controls">
-                        <input class="filter_price_per_day_form_input" type="number" name="min-price"
+                        <label class="visually-hidden" for="min">От 0</label>
+                        <input id="min" class="filter_price_per_day_form_input" type="number" name="min-price"
                             placeholder="ОТ 0">
-                        <input class="filter_price_per_day_form_input" type="number" name="max-price"
+                            <label class="visually-hidden" for="max">До 3000</label>
+                        <input id="max" class="filter_price_per_day_form_input" type="number" name="max-price"
                             placeholder="ДО 3000">
                     </div>
 
