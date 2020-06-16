@@ -534,6 +534,7 @@ a {
     height: 38px;
     width: 38px;
     border: none;
+    background-color: var(--basic_grey);
 }
 
 .form_order_item_btn_person svg {
@@ -791,7 +792,6 @@ fieldset {
     display: -ms-flexbox;
     display: flex;
     background-color: var(--basic_blue);
-    height: 217px;
     padding: 26px 73px 31px 72px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -801,7 +801,6 @@ fieldset {
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
-    margin-top: 27px;
 }
 
 .filter ul {
@@ -874,6 +873,10 @@ fieldset {
 }
 
 .filter_custom_checkbox:disabled+label::before {
+    opacity: 0.3;
+}
+
+.filter_custom_checkbox:disabled+label {
     opacity: 0.3;
 }
 
@@ -998,7 +1001,6 @@ fieldset {
     border-radius: 2px;
     text-transform: uppercase;
     cursor: pointer;
-    margin-bottom: 32px;
 }
 
 .filter_price_per_day_form_button:hover, .filter_price_per_day_form_button:focus {
@@ -1024,6 +1026,12 @@ fieldset {
     padding: 0 64px 0 73px;
 }
 
+.filter_sort_inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
 .filter_result_matching {
     margin: 0;
     font-weight: bold;
@@ -1038,9 +1046,9 @@ fieldset {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
 }
 
 .filter_sorting_buttons li:not(:last-child) {
@@ -1087,7 +1095,7 @@ fieldset {
     color: var(--basic_black);
     color: var(--rbga_black);
     border: none;
-    border-bottom: 1px dashed var(--basic_blue);
+    border-bottom: 1px dotted var(--basic_blue);
     background-color: transparent;
     padding: 0px;
     font-weight: normal;
@@ -1262,10 +1270,10 @@ fieldset {
     transition: transform 0.8s ease;
     position: absolute;
     transform: translate(-50%, -1000%);
-    top: 0;
+    top: 100%;
     left: 50%;
 }
 
 .modal.active {
-    transform: translate(-50%, 22%);
+    transform: translate(-50%, 0%);
 }

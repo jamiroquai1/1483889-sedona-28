@@ -7,7 +7,7 @@
     <meta name="description" content="Веб-сайт города Седона в Аризоне, США">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -65,20 +65,22 @@
                     <ul>
                         <li>
 
-                            <input type="checkbox" class="filter_custom_checkbox" name="hotel" id="filter-hotel" checked>
+                            <input type="checkbox" class="filter_custom_checkbox" name="hotel" id="filter-hotel"
+                                checked>
                             <label for="filter-hotel">Гостиница</label>
                         </li>
 
                         <li>
 
-                            <input type="checkbox" class="filter_custom_checkbox" name="motel" id="filter-motel" checked>
+                            <input type="checkbox" class="filter_custom_checkbox" name="motel" id="filter-motel"
+                                checked>
                             <label for="filter-motel">Мотель</label>
                         </li>
 
                         <li>
 
-                            <input type="checkbox" class="filter_custom_checkbox" name="apartments" id="filter-apartments"
-                                checked>
+                            <input type="checkbox" class="filter_custom_checkbox" name="apartments"
+                                id="filter-apartments" checked>
                             <label for="filter-apartments">Апартаменты</label>
                         </li>
                     </ul>
@@ -87,8 +89,10 @@
                 <fieldset class="filter_price_per_day_form">
                     <legend class="filter_price_per_day_form_legend">Стоимость в сутки (Р):</legend>
                     <div class="filter_price_per_day_form_controls">
-                        <input class="filter_price_per_day_form_input" type="number" name="min-price" placeholder="ОТ 0">
-                        <input class="filter_price_per_day_form_input" type="number" name="max-price" placeholder="ДО 3000">
+                        <input class="filter_price_per_day_form_input" type="number" name="min-price"
+                            placeholder="ОТ 0">
+                        <input class="filter_price_per_day_form_input" type="number" name="max-price"
+                            placeholder="ДО 3000">
                     </div>
 
                     <div class="filter_price_per_day_form_range_filter">
@@ -97,8 +101,10 @@
                                 <div class="filter_price_per_day_form_bar"></div>
 
                             </div>
-                            <div class="filter_price_per_day_form_toggle toggle-min" tabindex="0" style="left: 0%"></div>
-                            <div class="filter_price_per_day_form_toggle toggle-max" tabindex="0" style="left: 80%"></div>
+                            <div class="filter_price_per_day_form_toggle toggle-min" tabindex="0" style="left: 0%">
+                            </div>
+                            <div class="filter_price_per_day_form_toggle toggle-max" tabindex="0" style="left: 80%">
+                            </div>
                         </div>
                     </div>
                     <button class="filter_price_per_day_form_button" type="submit">Показать</button>
@@ -112,17 +118,17 @@
         <section class="filter_result">
 
             <div class="filter_sort">
+                <div class="filter_sort_inner">
+                    <p class="filter_result_matching">Найдено: 3</p>
+                    <span class="filter_result_matching_sorting">Сортировка:</span>
 
-                <p class="filter_result_matching">Найдено: 3</p>
-                <span class="filter_result_matching_sorting">Сортировка:</span>
-
-                <ul class="filter_sorting_buttons">
-                    <li class="filter_result_sorting_buttons_item filter_result_sorting_buttons_item_active">По цене
-                    </li>
-                    <li class="filter_result_sorting_buttons_item">По типу</li>
-                    <li class="filter_result_sorting_buttons_item">По рейтингу</li>
-                </ul>
-
+                    <ul class="filter_sorting_buttons">
+                        <li class="filter_result_sorting_buttons_item filter_result_sorting_buttons_item_active">По цене
+                        </li>
+                        <li class="filter_result_sorting_buttons_item">По типу</li>
+                        <li class="filter_result_sorting_buttons_item">По рейтингу</li>
+                    </ul>
+                </div>
                 <div class="arrows_filter">
                     <button class="filter_arrow" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="11"
                             height="10" viewBox="0 0 11 10">
