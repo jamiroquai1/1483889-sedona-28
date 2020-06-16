@@ -634,6 +634,12 @@ a {
     background-color: var(--active_brown);
 }
 
+.map {
+    background-image: url("../img/map.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /* Секция footer */
 
 .footer {
@@ -649,6 +655,11 @@ a {
     -ms-flex-align: center;
     align-items: center;
     padding: 0 73px 0 73px;
+}
+
+.footer_main_page {
+    margin-top: -123px;
+    z-index: 1;
 }
 
 .footer_item {
@@ -672,6 +683,7 @@ a {
 
 .footer_item_paragraph {
     margin: 0;
+    margin-top: -15px;
     margin-bottom: 9px;
 }
 
@@ -1099,7 +1111,6 @@ fieldset {
     border: none;
 }
 
-
 /* Страница catalog, каталог найденных отелей */
 
 .filter_result_list {
@@ -1258,4 +1269,3 @@ fieldset {
 .modal.active {
     transform: translate(-50%, 22%);
 }
-
